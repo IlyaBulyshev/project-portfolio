@@ -1,0 +1,27 @@
+/* Icons from directory "" */
+.icon-fb,.icon-fb {
+	background-image:url('../../img/icons/icons.svg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+		&:hover {
+	 	background: url('../../img/icons/icons1.svg') 0 0 no-repeat;
+	}
+}
+.icon-fb-dims{width:31px;height:30px}
+.icon-tw,.icon-tw {
+	background-image:url('../../img/icons/icons.svg');
+	background-position: 0 -30px;
+	background-repeat: no-repeat;
+		&:hover {
+			background: url('../../img/icons/icons1.svg') 0 -30px no-repeat;
+		}
+}
+.icon-tw-dims{width:31px;height:30px}
+.icon-vk,.icon-vk{background-image:url('../../img/icons/icons.svg');
+	background-position:0 -60px;
+	background-repeat:no-repeat;
+	 &:hover {
+			background: url('../../img/icons/icons1.svg') 0 -60px no-repeat;
+		}
+}
+.icon-vk-dims{width:32px;height:30px}

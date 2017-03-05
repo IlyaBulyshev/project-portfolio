@@ -1,0 +1,73 @@
+// mixin
+@mixin btns ($color-border, $font-color) {
+	padding: 7px 13px;
+	border: 2px solid $color-border;
+	border-radius: 30px;
+	font-size: 14px;
+	font-weight: 600;
+	color: $font-color;
+	display: inline-block;
+}
+
+@mixin title() {
+	font-size: 1.9444rem;
+	font-weight: 500;
+	color: #414141;
+}
+
+// // cycles
+// @each $social in (fb, vk, tw) {
+// 	.link_#{$social} {
+// 		background-image: url('../img/icons/#{$social}.png');
+// 		transition: all .5s;
+// 		&:hover {
+// 			background-image: url('../img/icons/#{$social}1.png');
+			
+// 		}
+// 	}
+// }
+
+// place holder
+%clearfix {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+// layout vars
+$footer-height: 50px;
+
+// colors
+$grey: #727272;
+$black: #414141;
+$white: #f6f6f6;
+$blue: #33c1e3;
+$red: #e85f61;
+
+//layout
+@import "layout/normalize";
+@import "layout/adjustment";
+@import "layout/font-awesome";
+@import "layout/fonts";
+@import "layout/animate";
+@import "layout/iconizr-svg-sprite";
+
+
+// sections
+@import "sections/header";
+@import "sections/footer";
+@import "sections/content";
+@import "sections/about";
+@import "sections/career";
+@import "sections/sidebar";
+@import "sections/portfolio";
+
+// media
+@import "../media/desktop";
+@import "../media/laptop";
+@import "../media/tablets";
+@import "../media/phones";
+	
+

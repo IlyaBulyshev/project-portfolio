@@ -1,0 +1,32 @@
+
+.nav {
+	text-align: right;
+}
+
+ .nav__link {
+	display: block;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	transition: .3s;
+		&:hover {
+	color: $blue;
+
+	}
+}
+
+.nav__items--active {
+	border-right: 6px solid #32c3e5;
+	font-weight: 600;
+	color: $blue;
+}
+
+.nav__title, .nav__icon {
+	display: inline-block;
+ }
+
+.nav__title {
+	margin-left: 2px;
+}
+

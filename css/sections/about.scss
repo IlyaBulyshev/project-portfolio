@@ -1,0 +1,148 @@
+.wrapper__auth {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: url(../../img/bg/Backqround.png);
+	text-align: center;
+		&:before {
+			content: "";
+			display: inline-block;
+			width: 0;
+			height: 100%;
+			vertical-align: middle;
+		}
+}
+
+.auth  {
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	opacity: 0;
+		&.zoomIn {
+			opacity: 1;
+		}
+}
+
+.auth__top {
+	background: #fff;
+	padding-top: 80px;
+	padding-bottom: 20px;
+}
+
+.auth__avatar {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	position: absolute;
+	border: 3px solid #cdcdcd;
+	left: 50%;
+	top: -70px;
+	margin-left: -70px;
+	background: url(../../img/content/IMG_1301.JPG);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.auth__avatar-foto {
+	display: block;
+	width: 100%;
+}
+
+.auth__title {
+	color: $black;
+	font-size: 1.1667rem;
+}
+
+.auth__bottom {
+	padding: 20px 0;	
+	background: $blue;
+	border-radius: 0px 0px 10px 10px;
+}
+
+
+
+ .auth__btn-link {
+	@include btns ($white, $white);
+		&:hover {
+			background:$white;
+			color: $blue;
+		}
+}
+
+
+//index
+.about {
+	@extend %clearfix;
+}
+
+.about__left {
+	float: left;
+	width: 40%;
+	text-align: center;
+}
+
+.about__right {
+	float: left;
+	width: 60%;
+}
+
+.about__img {
+	max-width: 223px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 5px solid #fff;
+	display: inline-block;
+	margin-right: 20px;
+	margin-top: 3px;
+}
+
+.about__img-items {
+	display: block;
+	max-width: 100%;
+	// max-height: 100%;
+}
+
+.title {
+	@include title;
+	margin-bottom: 30px;
+}
+
+.about__text--block {
+	font-weight: 300px;
+}
+
+.about__text--block p {
+	margin-bottom: 15px;
+	margin-top: 0;
+}
+
+.about__text {
+	height: 300px;
+	overflow: auto;
+	margin-bottom: 62px;
+}
+
+.about_download {
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+.about_download-link {
+	@include btns ($red, $red)
+		&:hover {
+			background: $red;
+			color: $white;
+		}
+}
+
+
+
+.about_download-title, .about__icon {
+	display: inline-block;
+}
+

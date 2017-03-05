@@ -1,0 +1,39 @@
+.footer {
+	background: #414141;
+}
+
+.footer__left {
+	float: left;
+	width: 50%;
+	padding-top: 18px;
+}
+
+.footer__right {
+	float: left;
+	width: 50%;
+	text-align: right;
+}
+
+.copyright {
+	color: #848484;
+	font-size: 0.7778rem;
+	font-weight: 300;
+}
+
+.social {
+	margin-top: 10px;
+}
+
+.social__item {
+	display: inline-block;
+}
+
+.social__link {
+	width: 32px;
+	height: 30px;
+	display: block;
+	background-repeat: no-repeat;
+}
+
+
+
